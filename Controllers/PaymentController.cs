@@ -26,8 +26,8 @@ namespace AfterpayTest.Controllers
 
             using (var client = new HttpClient())
             {
-                var byteArray = Encoding.ASCII.GetBytes($"{username}:{password}");
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(byteArray));
+                  var byteArray = Encoding.ASCII.GetBytes($"{username}:{password}");
+                  client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Convert.ToBase64String(byteArray));
 
                 var chargeData = new
                 {
