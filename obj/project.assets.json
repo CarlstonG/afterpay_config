@@ -890,26 +890,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\carlston\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages": {},
+    "C:\\Users\\Carl\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carlston\\Desktop\\Coding\\afterpay_config\\AfterpayTest.csproj",
+      "projectUniqueName": "C:\\Users\\Carl\\Desktop\\Code\\practices\\AfterpayTest\\AfterpayTest.csproj",
       "projectName": "AfterpayTest",
-      "projectPath": "C:\\Users\\carlston\\Desktop\\Coding\\afterpay_config\\AfterpayTest.csproj",
-      "packagesPath": "C:\\Users\\carlston\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carlston\\Desktop\\Coding\\afterpay_config\\obj\\",
+      "projectPath": "C:\\Users\\Carl\\Desktop\\Code\\practices\\AfterpayTest\\AfterpayTest.csproj",
+      "packagesPath": "C:\\Users\\Carl\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Carl\\Desktop\\Code\\practices\\AfterpayTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\carlston\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+        "C:\\Users\\Carl\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -918,7 +915,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -979,7 +975,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

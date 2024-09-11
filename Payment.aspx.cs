@@ -39,41 +39,34 @@ namespace OB455_Booklist
 {
     public partial class Payment : Page
     {
-        protected async void AfterpayButton_Click(object sender, EventArgs e)
+       protected async void AfterpayButton_Click(object sender, EventArgs e)
+{
+    try
+    {
+        // Call your existing Afterpay charge method
+        string response = await CreateAfterpayCharge();
+        dynamic jsonResponse = JsonConvert.DeserializeObject(response);
+
+        if (jsonResponse != null && jsonResponse.redirectCheckoutUrl != null)
         {
-            try
-            {
-                afterpayButton.Style.Add("display", "none");
-                BtnLoader.Style.Add("display", "block");
-                lblPMErrors.Style.Add("display", "none");
-
-                // Call your existing Afterpay charge method
-                string response = await CreateAfterpayCharge();
-                dynamic jsonResponse = JsonConvert.DeserializeObject(response);
-
-                if (jsonResponse != null && jsonResponse.redirectConfirmUrl != null)
-                {
-                    // Redirect to Afterpay confirmation page
-                    Response.Redirect(jsonResponse.redirectConfirmUrl.ToString());
-                }
-                else
-                {
-                    // Handle error if no redirect URL received
-                    lblPMErrors.Text = "Error creating Afterpay checkout.";
-                    lblPMErrors.Style.Add("display", "block");
-                    afterpayButton.Style.Add("display", "block");
-                    BtnLoader.Style.Add("display", "none");
-                }
-            }
-            catch (Exception ex)
-            {
-                lblPMErrors.Text = "An error occurred during Afterpay processing.";
-                lblPMErrors.Style.Add("display", "block");
-                afterpayButton.Style.Add("display", "block");
-                BtnLoader.Style.Add("display", "none");
-                // Optionally log the exception here
-            }
+            // Pass the URL to the client-side
+            ClientScript.RegisterStartupScript(this.GetType(), "redirect", $"window.location.href='{jsonResponse.redirectCheckoutUrl}';", true);
         }
+        else
+        {
+            // Handle error if no redirect URL is received
+            lblPMErrors.Text = "Error creating Afterpay checkout.";
+            lblPMErrors.Style.Add("display", "block");
+        }
+    }
+    catch (Exception ex)
+    {
+        lblPMErrors.Text = "An error occurred during Afterpay processing.";
+        lblPMErrors.Style.Add("display", "block");
+        // Optionally log the exception here
+    }
+}
+
 
 
         //afterpay method test
