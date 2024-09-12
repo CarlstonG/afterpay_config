@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AfterpayTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31b18eeba051d090e5276e44c3c8b6208c499501")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5a087e49a0d9eef1600d1b2ae96f295397c86df")]
 [assembly: System.Reflection.AssemblyProductAttribute("AfterpayTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AfterpayTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
